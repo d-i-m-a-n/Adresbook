@@ -31,5 +31,7 @@ public:
 
 private:
     Ui::adressbook *ui;
+
+    bool textModified;
 };
 #endif // ADRESSBOOK_H
