@@ -68,6 +68,9 @@ void adressbook::save()
 
 void adressbook::markUnsavedChanges()
 {
-    ui->pushButton_save->setText("Сохранить*");
-    textModified = true;
+    if(!textModified)
+    {
+        ui->pushButton_save->setText("Сохранить*");
+        textModified = true;
+    }
 }
